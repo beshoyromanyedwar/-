@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خدمة إعدادي | كنيسة الشهيد أبي سيفين والأنبا مقار</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts (Cairo) -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #f8fafc;
+        }
+        .hero-bg {
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.92), rgba(30, 58, 138, 0.88)), 
+                        url('https://images.unsplash.com/photo-1548625361-195fe57876a4?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+        }
+        .gold-accent {
+            color: #d97706;
+        }
+    </style>
+</head>
+<body class="text-slate-800">
+
+    <!-- شريط التنقل (Navbar) -->
+    <header class="bg-white/95 backdrop-blur-md sticky top-0 z-50 shadow-sm border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- الشعار واسم الكنيسة -->
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 rounded-full bg-amber-500/10 flex items-center justify-center text-amber-600 text-2xl border border-amber-500/20">
+                        <i class="fa-solid fa-cross"></i>
+                    </div>
+                    <div>
+                        <span class="text-xs font-semibold text-amber-600 block tracking-wider">أسرة شباب اعدادي </span>
+                        <h1 class="text-base sm:text-lg font-bold text-slate-900 leading-tight">كنيسة الشهيد أبي سيفين والأنبا مقار</h1>
+                    </div>
+                </div>
+
+                <!-- القائمة في الشاشات الكبيرة -->
+                <nav class="hidden md:flex items-center gap-6 font-medium text-slate-600">
+                    <a href="#home" class="hover:text-amber-600 transition"> الصفحة الرئيسية</a>
+                    <a href="#verse" class="hover:text-amber-600 transition">آية الأسبوع</a>
+                    <a href="#schedule" class="hover:text-amber-600 transition">مواعيدنا</a>
+                    <a href="#activities" class="hover:text-amber-600 transition">الأنشطة</a>
+                    <a href="#gallery" class="hover:text-amber-600 transition">الذكريات</a>
+                    <a href="#contact" class="hover:text-amber-600 transition">تواصل معنا</a>
+                </nav>
+
+                <!-- زر تسجيل الحضور -->
+                <div class="hidden sm:block">
+                    <a href="#contact" class="bg-amber-600 hover:bg-amber-700 text-white px-5 py-2.5 rounded-full font-bold shadow-md hover:shadow-lg transition">
+                        تسجيل حضور
+                    </a>
+                </div>
+
+                <!-- زر القائمة للهاتف -->
+                <button id="menu-btn" class="md:hidden text-2xl text-slate-700">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- القائمة الجانبية للموبايل -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 px-6 py-4 space-y-3">
+            <a href="#home" class="block text-slate-700 font-semibold py-1">  الصفحة الرئيسية</a>
+            <a href="#verse" class="block text-slate-700 font-semibold py-1">آية الأسبوع</a>
+            <a href="#schedule" class="block text-slate-700 font-semibold py-1">مواعيدنا</a>
+            <a href="#activities" class="block text-slate-700 font-semibold py-1">الأنشطة</a>
+            <a href="#gallery" class="block text-slate-700 font-semibold py-1">الذكريات</a>
+            <a href="#contact" class="block text-amber-600 font-bold py-1">تواصل معنا</a>
+        </div>
+    </header>
+
+    <!-- الواجهة الرئيسية (Hero Section) -->
+    <section id="home" class="hero-bg text-white py-24 sm:py-32 px-4 relative overflow-hidden">
+        <div class="max-w-4xl mx-auto text-center space-y-6">
+            <div class="inline-block px-4 py-1.5 rounded-full bg-amber-500/20 border border-amber-400/40 text-amber-300 text-sm font-semibold mb-2">
+                ✨ أهلاً بيكم في بيتكم الثاني
+            </div>
+            <h1 class="text-3xl sm:text-5xl font-extrabold leading-snug">
+                خدمة المرحلة الإعدادية <br>
+                <span class="text-amber-400">مستنين اي حد من اي حتة ينورنا</span>
+            </h1>
+            <p class="text-slate-200 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
+                
+            </p>
+            <div class="flex flex-wrap justify-center gap-4 pt-4">
+                <a href="#schedule" class="bg-amber-600 hover:bg-amber-500 text-white font-bold px-8 py-3 rounded-xl shadow-lg transition transform hover:-translate-y-0.5">
+                    تعرف على مواعيدنا
+                </a>
+                <a href="#verse" class="bg-white/10 hover:bg-white/20 text-white font-bold px-8 py-3 rounded-xl backdrop-blur-md transition">
+                    رسالة الأسبوع 📖
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- بطاقة آية الأسبوع -->
+    <section id="verse" class="py-12 -mt-10 relative z-10 px-4">
+        <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl p-8 border border-slate-100 flex flex-col md:flex-row items-center gap-6 text-center md:text-right">
+            <div class="w-16 h-16 rounded-2xl bg-amber-100 text-amber-600 flex items-center justify-center text-3xl shrink-0">
+                <i class="fa-solid fa-bible"></i>
+            </div>
+            <div class="flex-1">
+                <span class="text-xs uppercase font-bold text-amber-600 tracking-wider">شعار مرحلة إعدادي</span>
+                <p class="text-xl sm:text-2xl font-bold text-slate-800 mt-1 italic">
+                    «لاَ يَسْتَهِنْ أَحَدٌ بِحَدَاثَتِكَ، بَلْ كُنْ قُدْوَةً لِلْمُؤْمِنِينَ فِي الْكَلاَمِ، فِي التَّصَرُّفِ، فِي الْمَحَبَّةِ، فِي الرُّوحِ، فِي الإِيمَانِ، فِي الطَّهَارَةِ.»
+                </p>
+                <span class="block text-sm text-slate-500 mt-2 font-semibold">(1 تيموثاوس 4: 12)</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- مواعيد الخدمة (Schedule) -->
+    <section id="schedule" class="py-16 px-4 max-w-7xl mx-auto">
+        <div class="text-center max-w-xl mx-auto mb-12">
+            <h2 class="text-3xl font-extrabold text-slate-900">مواعيد الخدمة الأسبوعية</h2>
+            <div class="w-16 h-1 bg-amber-500 mx-auto mt-3 rounded-full"></div>
+            <p class="text-slate-600 mt-3">هنستنا حضوركم وتفاعلكم معانا في لقاءاتنا الدورية</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- الكارت 1 -->
+            <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition text-center group hover:border-amber-400">
+                <div class="w-14 h-14 mx-auto rounded-full bg-blue-50 text-blue-600 flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition">
+                    <i class="fa-solid fa-church"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-2">القداس الشهري</h3>
+                <p class="text-amber-600 font-bold mb-3">السبت: 8:00 ص - 10:30 ص</p>
+                <p class="text-slate-500 text-sm">مذبح الشهيد أبي سيفين - التناول وسر الإفخارستيا هو سر قوتنا الروحية.</p>
+            </div>
+
+            <!-- الكارت 2 -->
+            <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition text-center group hover:border-amber-400">
+                <div class="w-14 h-14 mx-auto rounded-full bg-amber-50 text-amber-600 flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition">
+                    <i class="fa-solid fa-users"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-2">اجتماع إعدادي الأسبوعي</h3>
+                <p class="text-amber-600 font-bold mb-3">السبت: 5:00 م - 7:00 م</p>
+                <p class="text-slate-500 text-sm">ترانيم، فقرة دراسة الكتاب المقدس، مسابقات وألعاب ومجموعات الخدمة و حجات تاني كتير هتعجبكم.</p>
+            </div>
+
+            <!-- الكارت 3 -->
+            <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition text-center group hover:border-amber-400">
+                <div class="w-14 h-14 mx-auto rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition">
+                    <i class="fa-solid fa-volleyball"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-2">الحان اعدادي</h3>
+                <p class="text-amber-600 font-bold mb-3">الجمعة: 5:00 م - 6:00 م</p>
+                <p class="text-slate-500 text-sm">بنتعلم مع بعض الألحان جميلة وبنحفظ سوه مع بعض وكل مرة بتيجي فيها وتسمع ليك هدية حلوة.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- الأنشطة والمهرجان (Activities) -->
+    <section id="activities" class="bg-slate-100 py-16 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-xl mx-auto mb-12">
+                <h2 class="text-3xl font-extrabold text-slate-900">أنشطة ومسابقات الخدمة</h2>
+                <div class="w-16 h-1 bg-amber-500 mx-auto mt-3 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:-translate-y-1 transition duration-200">
+                    <div class="text-amber-500 text-3xl mb-3"><i class="fa-solid fa-award"></i></div>
+                    <h4 class="font-bold text-lg mb-2"> مسابقة قراه الكتاب المقدس</h4>
+                    <p class="text-slate-600 text-sm">قراء جزء صغير جدا من الكتاب المقدس كل يوم وفي نهاية المسابقة بتاخد جواءز قيمة،    .</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:-translate-y-1 transition duration-200">
+                    <div class="text-amber-500 text-3xl mb-3"><i class="fa-solid fa-bus"></i></div>
+                    <h4 class="font-bold text-lg mb-2">الرحلات و الموءتمرات</h4>
+                    <p class="text-slate-600 text-sm">أيام روحية وترفيهية، زيارة الأديرة وزيارة الأماكن الأثرية وحجات تانية كتير.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:-translate-y-1 transition duration-200">
+                    <div class="text-amber-500 text-3xl mb-3"><i class="fa-solid fa-music"></i></div>
+                    <h4 class="font-bold text-lg mb-2">الألحان</h4>
+                    <p class="text-slate-600 text-sm"> حفظ الألحان القبطية وترانيم الشباب الرائعة.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:-translate-y-1 transition duration-200">
+                    <div class="text-amber-500 text-3xl mb-3"><i class="fa-solid fa-heart-pulse"></i></div>
+                    <h4 class="font-bold text-lg mb-2">الافتقاد ورعاية الشباب</h4>
+                    <p class="text-slate-600 text-sm">الخدام والخادمات في تواصل مستمر معكم للاطمئنان دراسياً وروحياً.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- معرض الذكريات (Gallery Preview) -->
+    <section id="gallery" class="py-16 px-4 max-w-7xl mx-auto">
+        <div class="text-center max-w-xl mx-auto mb-12">
+            <h2 class="text-3xl font-extrabold text-slate-900"> ذكريات الخدمة</h2>
+            <div class="w-16 h-1 bg-amber-500 mx-auto mt-3 rounded-full"></div>
+            <p class="text-slate-600 mt-2">لحظات جميلة من رحلاتنا ومهرجاناتنا </p>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="h-48 rounded-xl overflow-hidden shadow-sm hover:scale-105 transition duration-300">
+                <img src="knisa2/2.jpg" alt=" اعياد الميلاد " class="w-full h-full object-cover">
+            </div>
+            <div class="h-48 rounded-xl overflow-hidden shadow-sm hover:scale-105 transition duration-300">
+                <img src="knisa2/borsa.jpg" alt="رحلة بورسعيد " class="w-full h-full object-cover">
+            </div>
+            <div class="h-48 rounded-xl overflow-hidden shadow-sm hover:scale-105 transition duration-300">
+                <img src="knisa2/masra.jpg" alt="المسراحية " class="w-full h-full object-cover">
+            </div>
+            <div class="h-48 rounded-xl overflow-hidden shadow-sm hover:scale-105 transition duration-300">
+                <img src="knisa2/8.jpg" alt="الكورال " class="w-full h-full object-cover">
+            </div>
+            <div class="h-48 rounded-xl overflow-hidden shadow-sm hover:scale-105 transition duration-300">
+                <img src="knisa2/snow.jpg" alt="رحلة snow city " class="w-full h-full object-cover">
+            </div>
+            <div class="h-48 rounded-xl overflow-hidden shadow-sm hover:scale-105 transition duration-300">
+                <img src="knisa2/9.jpg" alt="رحلة اديورة الفيوم " class="w-full h-full object-cover">
+            </div>
+            <div class="h-48 rounded-xl overflow-hidden shadow-sm hover:scale-105 transition duration-300">
+                <img src="knisa2/7.jpg" alt="حجز كورة " class="w-full h-full object-cover">
+            </div>
+        </div>
+    </section>
+
+    <!-- تواصل معنا / تسجيل الحضور والطلبات (Contact Section) -->
+    <section id="contact" class="py-16 px-4 bg-slate-900 text-white">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold"> رسائل الخدمة وطلبات الصلاة</h2>
+                <p class="text-slate-400 mt-2">سواء كنت عاوز تسجل حضورك، أو عندك سؤال روحي، أو طلب صلاة سرّي، او اي حاجة تانية يبصتنا سماع صوتك.</p>
+            </div>
+
+            <form id="contactForm" class="bg-slate-800/80 p-8 rounded-2xl border border-slate-700 space-y-4 shadow-xl">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-sm font-semibold mb-1">اسمك ثلاثي</label>
+                        <input type="text" required placeholder="مثال: مينا رفيق" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-amber-500">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold mb-1">السنة الدراسية</label>
+                        <select class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-amber-500">
+                            <option>أولى إعدادي</option>
+                            <option>تانية إعدادي</option>
+                            <option>تالتة إعدادي</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-sm font-semibold mb-1">رقم الهاتف (واتساب)</label>
+                        <input type="tel" placeholder="01xxxxxxxxx" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-amber-500">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold mb-1">نوع الرسالة</label>
+                        <select class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-amber-500">
+                            <option>تسجيل حضور للاجتماع</option>
+                            <option>عاوزنا نتكلم عن اية في الخدمة</option>
+                            <option>سؤال لأبونا / أمين الخدمة</option>
+                            <option>اقتراح أو فكرة نشاط</option>
+                            <option>حاجة تانية</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-semibold mb-1">رسالتك</label>
+                    <textarea rows="3" placeholder="اكتب ما يدور في قلبك..." class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-amber-500"></textarea>
+                </div>
+
+                <button type="submit" class="w-full bg-amber-600 hover:bg-amber-500 text-white font-bold py-3 rounded-lg shadow-md transition">
+                    إرسال إلى الخدام
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- تذييل الصفحة (Footer) -->
+    <footer class="bg-slate-950 text-slate-400 py-8 px-4 border-t border-slate-800 text-center">
+        <div class="max-w-7xl mx-auto space-y-4">
+            <p class="text-white font-bold text-lg">كنيسة الشهيد العظيم أبي سيفين والقديس الأنبا مقار</p>
+            <p class="text-sm">خدمة أسرة شباب (إعدادي) - نسعد بخدمتكم دائماً</p>
+            <p class="text-sm">ملحوظة : مكانك الي بتكبر فيه روحيا بتلاقي فيه اصحاب حقيقيين وبتكتشف فيه مواهبك براعية وشفاعة القديسين ابي سيفين و الانبا مقار</p>
+            <p class="text-sm">the web created by @ ( beshoy romany )</p>
+            <div class="flex justify-center gap-6 text-xl text-slate-400">
+                <a href="#" class="hover:text-amber-500 transition"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="hover:text-amber-500 transition"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#" class="hover:text-amber-500 transition"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <p class="text-xs text-slate-600 pt-4 border-t border-slate-900">
+                «اذْكُرُوا مُرْشِدِيكُمُ الَّذِينَ كَلَّمُوكُمْ بِكَلِمَةِ اللهِ» (عب 13: 7)
+            </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript بسيط للتحكم في القائمة والنموذج -->
+    <script>
+        // زر القائمة في الموبايل
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // رسالة تأكيد عند إرسال النموذج
+        const contactForm = document.getElementById('contactForm');
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('تم استلام رسالتك بنجاح! نراك قريباً في كنيستنا، صلوات أبي سيفين والأنبا مقار تحرسك 🙏');
+            contactForm.reset();
+        });
+    </script>
+</body>
+</html>
